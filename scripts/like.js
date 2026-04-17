@@ -39,3 +39,34 @@ function setButtonText(heart, button) {
     );
   }
 }
+
+// ===== ДОБАВЛЕНО: ОБРАБОТЧИКИ ДЛЯ КНОПОК "СОХРАНИТЬ НА ПАМЯТЬ" И "ОК" =====
+
+const saveButton = document.querySelector('.save__button');
+const dialog = document.getElementById('dialog');
+const closeButton = document.querySelector('.dialog__close');
+
+if (saveButton) {
+  saveButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (dialog) {
+      dialog.showModal();
+    }
+  });
+}
+
+if (closeButton) {
+  closeButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (dialog) {
+      dialog.close();
+    }
+  });
+}
+
+const forms = document.querySelectorAll('form');
+forms.forEach((form) => {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+  });
+});
