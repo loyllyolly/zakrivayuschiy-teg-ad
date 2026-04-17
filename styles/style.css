@@ -1,7 +1,7 @@
 /* Основная стилизация страницы */
 .page {
   min-inline-size: 320px;
-  min-block-size: 100dvh; 
+  min-block-size: 100dvh;
   font-family: var(--inter), sans-serif;
   font-variation-settings: 'wght' var(--font-weight_main-font, 400);
   font-size: var(--main-font-size);
@@ -61,7 +61,7 @@ main {
   padding-left: 10px;
 }
 
-.card__image-container {  
+.card__image-container {
   position: relative;
   overflow: hidden;
   border-bottom: var(--border);
